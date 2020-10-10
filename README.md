@@ -1,6 +1,26 @@
 # is_online
 
-Check if the internet connection is up.
+Check if the internet connection is up in Deno.
+
+## 🔧 How to use
+
+```js
+import { isOnline } from 'https://deno.land/x/is_online@v0.1.0/mod.ts';
+```
+
+## 💡 Usage
+
+```ts
+import { isOnline } from 'https://deno.land/x/is_online@v0.1.0/mod.ts';
+
+(async () => {
+  console.log(await isOnline());
+  // true
+
+  console.log(await isOnline({ timeout: 5000 }));
+  // true
+})();
+```
 
 ## ❗ Issues
 
